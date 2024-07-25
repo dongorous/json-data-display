@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.container__title {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap; 
+    margin: -10px; 
+}
+
+.column {
+    flex: 1;
+    margin: 10px; 
+    min-width: 300px; 
+}
+
+.column__title {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+}
+
+.column__title span{
+    font-size: .7em;
+    color: #666;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-block {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px; 
+    margin-top: 10px;
+}
+
+.card_widget {
+    display: flex;
+    align-items: center;
+    padding: 8px 10px;
+    border-radius: 4px;
+    margin-bottom: 5px;
+}
+
+.card_widget_highlited {
+    display: flex;
+    padding: 8px 10px;
+    border-radius: 4px;
+    margin-right: 10px;
+    color: #ffffff;
+}
+
+.card__title {
+    margin: 0;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.card__content {
+    font-size: 1em;
+    color: #666;
+}
+
+
+@media (max-width: 1200px) {
+    .container {
+        padding: 15px;
+    }
+
+    .container__title {
+        font-size: 1.8em;
+    }
+
+    .column__title {
+        font-size: 1.4em;
+    }
+
+    .card__title {
+        font-size: 1.1em;
+    }
+
+    .card__content {
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 992px) {
+    .row {
+        flex-direction: column; 
+    }
+
+    .column {
+        margin: 10px 0; 
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    .container__title {
+        font-size: 1.6em;
+    }
+
+    .column__title {
+        font-size: 1.2em;
+    }
+
+    .card__title {
+        font-size: 1em;
+    }
+
+    .card__content {
+        font-size: 0.8em;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        padding: 5px;
+    }
+
+    .container__title {
+        font-size: 1.4em;
+    }
+
+    .column__title {
+        font-size: 1em;
+    }
+
+    .card__title {
+        font-size: 0.9em;
+    }
+
+    .card__content {
+        font-size: 0.7em;
+    }
+}
